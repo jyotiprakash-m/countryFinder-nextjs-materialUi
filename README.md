@@ -17,7 +17,7 @@ $ npm install
 > STEP:3 Now you all set . To run the application use below command
 
 ```sh
-$ npm start
+$ npm run dev
 
 ```
 ## Screenshots
