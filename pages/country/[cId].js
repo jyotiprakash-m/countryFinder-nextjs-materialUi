@@ -1,10 +1,7 @@
-import React from 'react'
-
+import CountryDetails from '../../components/CountryDetails'
 function Country() {
     return (
-        <div>
-            this is the country
-        </div>
+        <CountryDetails />
     )
 }
 

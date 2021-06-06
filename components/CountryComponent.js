@@ -26,8 +26,6 @@ const useStyles = makeStyles((theme) => ({
 function CountryComponent({ countries }) {
     const classes = useStyles();
 
-    // const countries = useSelector((state) => state.allCountries.countries);
-
     const renderList = countries.map((country) => {
         const { flag, alpha3Code, name, capital } = country;
         return (
@@ -38,12 +36,11 @@ function CountryComponent({ countries }) {
                             <CardMedia
                                 className={classes.imageHeight}
                                 component="img"
-                                alt="Contemplative Reptile"
+                                alt={name}
                                 image={flag}
-                                title="Contemplative Reptile"
                             />
                             <CardContent>
-                                <Typography gutterBottom variant="h6" component="h2">
+                                <Typography gutterBottom variant="h5" component="h2">
                                     {name}
                                 </Typography>
                                 <Typography variant="p" component="p">
@@ -61,7 +58,7 @@ function CountryComponent({ countries }) {
             <Grid item xs={12}>
                 <Grid container justify="center" spacing={2}>
                     {Object.keys(countries).length === 0 ? (
-                        <Grid className={classes.loading}><Typography variant="h3">Loading...</Typography></Grid>
+                        <Grid style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}><Typography variant="h3">Loading...</Typography></Grid>
                     ) : (renderList)}
                 </Grid>
             </Grid>

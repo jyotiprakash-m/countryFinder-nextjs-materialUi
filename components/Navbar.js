@@ -22,14 +22,14 @@ export default function Navbar() {
     return (
         <div className={classes.root}>
             <AppBar position="static">
-                <Toolbar>
+                <Toolbar style={{ position: 'relative' }}>
                     <IconButton edge="start" color="inherit" aria-label="menu">
                         <PublicIcon />
                     </IconButton>
                     <Typography variant="h5" className={classes.title}>
                         Country Finder
                     </Typography>
-                    <Button href="/" e color="inherit">Home</Button>
+                    <Button style={{ position: 'absolute', right: '3vw', fontWeight: '600' }} href="/" color="inherit">Home</Button>
                 </Toolbar>
             </AppBar>
         </div>
