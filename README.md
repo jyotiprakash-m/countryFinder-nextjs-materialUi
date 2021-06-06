@@ -1,12 +1,12 @@
-# countryFinder-redux-materialUi
+# countryFinder-nextjs-materialUi
 
 ## Set Up
 
 > STEP:1 Clone this repository by following command
 
 ```sh
-$ git clone https://github.com/jyotiprakash-m/countryFinder-redux-materialUi.git
-$ cd countryFinder-redux-materialUi
+$ git clone https://github.com/jyotiprakash-m/countryFinder-nextjs-materialUi.git
+$ cd countryFinder-nextjs-materialUi
 ```
 > STEP:2 Then install all the dependencies using below command
 
