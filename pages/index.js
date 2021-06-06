@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
 import { Fragment } from 'react'
 export default function Home() {
   return (
@@ -10,7 +9,6 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <h1>Let`s build country finder </h1>
-
     </Fragment>
   )
 }
